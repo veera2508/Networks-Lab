@@ -4,7 +4,7 @@
 #include<netinet/in.h>
 #include<string.h>
 
-#define PORT 8080
+#define PORT 8081
 
 int main(int argc, char **argv)
 {
@@ -49,3 +49,10 @@ int main(int argc, char **argv)
     close(cfd);
     return 0;
 }
+
+/*
+Output:
+(base) Veeraraghavans-MacBook-Pro-2:A-2 veeraraghavan$ ./s
+Message from client: Hello from the Client
+Message sent: Hello from the Client
+*/

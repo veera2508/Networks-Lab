@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     //sending the file contents back to client
     FILE *fp;
     fp = fopen(buffer, "r");
-    fscanf(fp, "%s", content);
+    fscanf(fp, "%[^\0]", content);
     fclose(fp);
     n = write(cfd, content, sizeof(content));
 
@@ -53,3 +53,11 @@ int main(int argc, char **argv)
     close(cfd);
     return 0;
 }
+
+/*
+Output:
+(base) Veeraraghavans-MacBook-Pro-2:A-3 veeraraghavan$ ./s
+Waiting for client
+File to be transferred: Direc/source.txt
+File Transferred
+*/

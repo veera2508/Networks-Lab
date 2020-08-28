@@ -50,3 +50,11 @@ int main(int argc, char **argv)
     close(sfd);
     return 0;
 }
+
+/*
+Output:
+(base) Veeraraghavans-MacBook-Pro-2:A-3 veeraraghavan$ ./c
+Enter the path of file: Direc/source.txt
+File Transferred
+Save the file in path: Direc/dest.txt
+*/
