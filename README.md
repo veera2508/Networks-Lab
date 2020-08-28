@@ -1,2 +1,2 @@
 # Networks-Lab
-Solution for network lab problems
+Solutions for Networks lab problems
